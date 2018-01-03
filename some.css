@@ -1,0 +1,116 @@
+
+
+.Pane2 {
+  overflow: auto;
+}
+
+.Resizer {
+    background: none;
+    z-index: 9001;
+}
+
+.Resizer.vertical {
+    border: none;
+}
+
+.Resizer.vertical:hover {
+    border: none;
+}
+
+
+.Resizer.horizontal {
+    border: none;
+}
+.Resizer.horizontal:hover {
+    border: none;
+}
+
+.Resizer {
+  opacity: 1;
+}
+
+.handles {
+
+    position: relative;
+    float: right;
+    left: -6px;
+    height: 100%;
+    width: 0;
+    z-index: 9000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: col-resize;
+}
+
+.verticalHandleBody {
+  background: black;
+  min-width: 15px;
+  height: 39px;
+  border-radius: 3px;
+  border: solid 1px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+span.verticalHandleLine {
+    min-width: 1px;
+    background: grey;
+    height: 26px;
+}
+
+.vertical .handles .horizontalHandleBody {
+    visibility: hidden;
+    height: 0;
+}
+
+span.Resizer.horizontal .handles .verticalHandleBody {
+    visibility: hidden;
+    height: 0;
+}
+
+span.Resizer.horizontal .handles {
+    width: 100%;
+    cursor: row-resize;
+}
+
+
+.horizontalHandleBody {
+    background: black;
+    height: 15px;
+    width: 39px;
+    border-radius: 3px;
+    bottom: 5px;
+    border: solid 1px grey;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: row-resize;
+}
+
+span.Resizer.horizontal .handles {
+    height: 18px;
+}
+
+span.horizontalHandleLine {
+    height: 1px;
+    background: grey;
+    width: 26px;
+}
+
